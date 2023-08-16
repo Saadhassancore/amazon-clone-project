@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com Shopping Cart</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"><a href="index.html"><img src="amazon_logo1.png" alt=""></a></div>
+            </div>
+            <div class="nav-address">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    <p class="add-second">Pakistan</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #333333;"></i>
+                </div>
+            </div>
+            <div class="icon-language">
+                <img src="usa.png" alt="">
+                <p class="language-select">EN</p>
+                <div class="icon-down-arrow-bold">
+                    <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <div class="nav-signin">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & List</p>
+            </div>
+            <div class="nav-return">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                Cart
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="cart-section">
+            <div class="continue">
+                <h4 class="shopping-cart">Shopping Cart</h4>
+                <hr class="horizontal-line">
+            </div>
+            <div class="cart">
+                <p class="paragraph">Shopping cart</p>
+                <p class="paragraph">You have 4 items in your cart</p>
+            </div>
+            <div class="price">
+                <p>Sort by: price</p>
+                <div class="icon"><i class="fa-solid fa-sort-down" style="color: #707070;"></i></div>
+            </div>
+            <!-- <div class="main-pink"> -->
+            <div class="pink">
+                <div class="image-pink">
+                    <img src="pink.png" alt="">
+                    <div class="details">
+                        <p>Monki lindy shirt in pink</p>
+                        <p>Color: Pink</p>
+                    </div>
+                    <div class="price-one">
+                        <span style="color: #333333;">$</span>
+                        <span class="product-price" name="price" style="color: #333333;"
+                            data-baseprice="30.00">30.00</span>
+                        <span class="del"><a href="#!" style="color: #cecece;"><i
+                                    class="fas fa-trash-alt"></i></a></span>
+                        <div class="implement-btn">
+                            <button class="btn-two inc-qty">+</button>
+                            <span id="totalClicks" class="product-count" style="color: #7d7d7d;">0</span>
+                            <button class="btn-two dec-qty">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="main-pink"> -->
+            <div class="pink">
+                <div class="image-pink">
+                    <img src="silver.png" alt="">
+                    <div class="details">
+                        <p>Teva Flatform Universal</p>
+                        <p>Color: white</p>
+                    </div>
+                    <div class="price-one">
+                        <span style="color: #333333;">$</span>
+                        <span class="product-price" style="color: #333333;" data-baseprice="48.00">48.00</span>
+                        <span class="del"><a href="#!" style="color: #cecece;"><i
+                                    class="fas fa-trash-alt"></i></a></span>
+                        <div class="implement-btn">
+                            <button class="btn-two inc-qty">+</button>
+                            <span id="totalClicks" class="product-count" style="color: #7d7d7d;">0</span>
+                            <button class="btn-two dec-qty">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+
+            <!-- <div class="main-pink"> -->
+            <div class="pink">
+                <div class="image-pink">
+                    <img src="ear.png" alt="">
+                    <div class="details">
+                        <p>Weekday thick earrings</p>
+                        <p>Color: Silver</p>
+                    </div>
+                    <div class="price-one">
+
+                        <span style="color: #333333;">$</span>
+                        <span class="product-price" style="color: #333333;" data-baseprice="12.00">12.00</span>
+                        <span class="del-one"><a href="#!" style="color: #cecece;"><i
+                                    class="fas fa-trash-alt"></i></a></span>
+                        <div class="implement-btn">
+                            <button class="btn-two inc-qty">+</button>
+                            <span id="totalClicks" class="product-count" style="color: #7d7d7d;">0</span>
+                            <button class="btn-two dec-qty">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="main-pink"> -->
+            <div class="pink">
+                <div class="image-pink">
+                    <img src="ear.png" alt="">
+                    <div class="details">
+                        <p>Weekday thick earrings</p>
+                        <p>Color: Silver</p>
+                    </div>
+                    <div class="price-one">
+                        <span style="color: #333333;">$</span>
+                        <span class="product-price" style="color: #333333;" data-baseprice="7.00">7.00</span>
+                        <span class="del-one"><a href="#!" style="color: #cecece;"><i
+                                    class="fas fa-trash-alt"></i></a></span>
+                        <div class="implement-btn">
+                            <button class="btn-two inc-qty">+</button>
+                            <span id="totalClicks" class="product-count" style="color: #7d7d7d;">0</span>
+                            <button class="btn-two dec-qty">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <div class="shipping">
+                <h4>Expected shipping delivery</h4>
+                <p class="paragraph-one">12.10.2023 - 14.10.2023</p>
+            </div>
+
+            <div class="shipping-one">
+                <h4>We accept</h4>
+                <p class="paragraph-two">
+                    <a href="https://pk.visamiddleeast.com/pay-with-visa/find-a-card/credit-cards.html"><i
+                            class="fa-brands fa-cc-visa" style="color: #0e4595;"></i></a>
+                    <a href="https://www.amaxinsurance.com/make-a-payment"><i class="fa-brands fa-cc-amex"
+                            style="color: #0e4595;"></i></a>
+                    <a
+                        href="https://pst.net/?utm_source=adwords_themelist_affi&utm_source=adwords&utm_term=mastercard+virtual+card&utm_campaign=&utm_medium=ppc&hsa_acc=7753264562&hsa_cam=19632293678&hsa_grp=148424357969&hsa_ad=646601939756&hsa_src=g&hsa_tgt=kwd-295724486816&hsa_kw=mastercard+virtual+card&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMIudip34zKgAMV18HVCh0VKAc4EAAYASAAEgKjFfD_BwE"><i
+                            class="fa-brands fa-cc-mastercard" style="color: #0e4595;"></i></a>
+                <a href="https://www.paypal.com/pk/home"><i class="fa-brands fa-cc-paypal" style="color: #0e4595;"></i></a>    
+                </p>
+            </div>
+            <div class="main-summary">
+                <div class="summary">
+                    <div class="summary-one">
+                        <h3>Summary</h3>
+                        <!-- <hr class="small-line"> -->
+                    </div>
+                    <div class="product-shipping">
+                        <h5>Product</h5>
+                        <p class="product-qty">4</p>
+                        <h5 class="dollor">Shipping</h5>
+                        <p class="paragraph-three">Gratis</p>
+                    </div>
+                    <!-- <hr class="small-two"> -->
+                    <div class="total">
+                        <h4>Total amount</h4>
+                        <h5 class="paragraph-four">(including VAT)</h5>
+                        <p class="dollor-one">$ <span style="color: #000;" id="cart_total"></span></p>
+                    </div>
+                    <button onclick="Shopping()" class="btn-one">GO TO CHECKOUT</button>
+                </div>
+
+                <form class="form-main">
+                    <div class="email-col">
+                        <label for="inputEmail4" class="form-label">Cart Number</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your cart number">
+                    </div>
+                    <div class="password-col">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Enter password">
+                    </div>
+                    <div class="Address-col">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="Address-col-2">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="city-col">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+                    </div>
+                    <div class="state-col">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="zip-col">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="Enter zip code">
+                    </div>
+                    <div class="check-col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="delivery-btn">
+                        <button type="submit" class="btn-primary">Add to cart</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back to top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">© 1996-2023, Amazon.com, Inc. or its affiliates</div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
